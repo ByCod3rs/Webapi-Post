@@ -18,7 +18,7 @@ Public Class Anasayfa
             Request.ContentType = Context_Type.Text
 
             If Basic_Guvenlik.Checked = True Then
-                Dim Credentials As String = Convert.ToBase64String(ASCIIEncoding.ASCII.GetBytes(Kullanıcı_Adı_Text.Text & ":" & Sifre_Text.Text))
+                Dim Credentials As String = Convert.ToBase64String(ASCIIEncoding.ASCII.GetBytes(Kullanıcı_Adı_Text.Text & ":" & Sifre_Text.Text)) ' Kullanıcı adı ve Şifre Base64 e Çevriliyor.
                 Request.Headers.Add("Authorization", "Basic " & Credentials)
             End If
 
