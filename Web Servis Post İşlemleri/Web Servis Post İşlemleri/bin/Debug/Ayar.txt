@@ -1,0 +1,9 @@
+False
+http://apiservis.com/api/Sorgu
+Kullanici Adi
+Şifre
+application/json
+
+{
+ "Barkod": "L5V88678S7"
+}
